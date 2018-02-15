@@ -9,36 +9,34 @@ public class Main{
 		System.out.println("");
 
 		//variables y numeros a comparar
-		int num1 = 1;
-		int num2 = 19;
-		int num3 = 32;
-		int num4 = 53;
+		int numeros[] = {1,97,53,72};
+		
 
 		int contador1 = 0;
 		int i = 0;
 
 		//desiciones para la comparacion de los numeros y sus mensajes.
 
-		for(i = 1; i<=num1; i++){
+		for(i = 1; i<=numeros[1]; i++){
 
-			if((num1%i)==0){
+			if((numeros[1]%i)==0){
 
 				contador1++;
 			}
 
 		}
-		if(num1<2){
-			System.out.println("El numero "+(num1)+" no es primo.");
+		if(numeros[1]<2){
+			System.out.println("El numero "+(numeros[1])+" no es primo.");
 			System.out.println("");
 
 		}else{
 
 			if(contador1<=2){
 
-				System.out.println("El numero "+(num1)+" es primo.");
+				System.out.println("El numero "+(numeros[1])+" es primo.");
 				System.out.println("");
 			}else{
-				System.out.println("El numero "+(num1)+" no es primo.");
+				System.out.println("El numero "+(numeros[1])+" no es primo.");
 
 			}
 		}
