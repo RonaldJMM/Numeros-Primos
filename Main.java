@@ -2,43 +2,51 @@ public class Main{
 	
 	public static void main(String[] arg){
 		System.out.println("");
-		System.out.println("Comparacion de Numeros");
+		System.out.println("Numeros Primos");
 		System.out.println("");
-		System.out.println("\n\n\t\tEjercicio No.1");
+		System.out.println("\n\n\t\tEjercicio No.3");
 		System.out.println("");
 		System.out.println("");
 
 		//variables y numeros a comparar
 		int numeros[] = {1,97,53,72};
 		
-
+		//contadores
 		int contador1 = 0;
-		int i = 0;
 
-		//desiciones para la comparacion de los numeros y sus mensajes.
+		//iniciadores
+		int i = 0, v = 0;
 
-		for(i = 1; i<=numeros[1]; i++){
+		//recorrido del arreglo de numeros
+		for(v = 0;v<4;v++){
+			//desiciones para la comparacion de los numeros y sus mensajes.
 
-			if((numeros[1]%i)==0){
+			for(i = 1; i<=numeros[v]; i++){
 
-				contador1++;
+				if((numeros[v]%i)==0){
+
+					contador1++;
+				}
+
 			}
-
-		}
-		if(numeros[1]<2){
-			System.out.println("El numero "+(numeros[1])+" no es primo.");
-			System.out.println("");
-
-		}else{
-
-			if(contador1<=2){
-
-				System.out.println("El numero "+(numeros[1])+" es primo.");
+			//validacion de numero menor a 2.
+			if(numeros[v]<2){
+				System.out.println("El numero "+(numeros[v])+" no es primo.");
 				System.out.println("");
-			}else{
-				System.out.println("El numero "+(numeros[1])+" no es primo.");
 
+			}else{
+				//validacion de numero primo
+				if(contador1<=2){
+
+					System.out.println("El numero "+(numeros[v])+" es primo.");
+					System.out.println("");
+				}else{
+					System.out.println("El numero "+(numeros[v])+" no es primo.");
+					System.out.println("");
+				}
 			}
+			//reinicio del contador
+			contador1=0;
 		}
 	}
 
